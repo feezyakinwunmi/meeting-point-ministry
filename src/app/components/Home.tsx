@@ -164,6 +164,7 @@ export default function HomeClient() {
       flex-direction: column !important;
       gap: 16px !important;
       width: auto !important;
+      visibility: hidden !important;
     }
     .swiper-custom-bullet {
       width: 14px !important;
@@ -173,11 +174,15 @@ export default function HomeClient() {
       opacity: 1 !important;
       transition: all 0.3s ease !important;
       cursor: pointer !important;
+            visibility: hidden !important;
+
     }
     .swiper-custom-bullet-active {
       background: #cc5500 !important;
       transform: scale(1.4) !important;
       box-shadow: 0 0 15px rgba(204, 85, 0, 0.7) !important;
+            visibility: hidden !important;
+
     }
   `}</style>
 
@@ -212,7 +217,7 @@ export default function HomeClient() {
 </section>
 
       {/* How We Walk Together - Clean white bg, left list + right image collage */}
-<section className="py-24 md:py-24 bg-gray-100 relative overflow-hidden">
+<section className="py-28 md:py-24 bg-gray-100 relative overflow-hidden">
   <div className="container mx-auto px-6">
     <motion.h2
       initial={{ opacity: 0, y: 60 }}
@@ -231,7 +236,7 @@ export default function HomeClient() {
   whileInView={{ opacity: 1, scale: 1 }}
   viewport={{ once: true }}
   transition={{ duration: 1.2, delay: 0.4 }}
-  className="relative h-[600px] md:h-[600px] md:block"
+  className="relative h-[250px] md:h-[400px] md:block"
 >
   <div className="absolute inset-0 flex items-center justify-center">
     <div className="relative w-full h-full max-w-5xl">
@@ -254,7 +259,7 @@ export default function HomeClient() {
           alt="Church worship hall"
           width={380}
           height={280}
-          className="rounded-2xl object-cover"
+          className="rounded-2xl object-cover hidden md:block"
         />
       </div>
 
@@ -265,18 +270,18 @@ export default function HomeClient() {
           alt="Hands holding spiritual light"
           width={380}
           height={400}
-          className="rounded-2xl object-cover"
+          className="rounded-2xl object-cover  "
         />
       </div>
 
       {/* Image 4 - Bottom-center small (like priest) */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-42 shadow-2xl z-30 hover:z-50 transition-all duration-500 hover:scale-110">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-20 shadow-2xl z-30 hover:z-50 transition-all duration-500 hover:scale-110">
         <Image
           src="/pic4.jpeg"
           alt="Apostle or disciple leading prayer"
           width={600}
-          height={50}
-          className="rounded-2xl object-contain"
+          height={20}
+          className="rounded-2xl object-contain hidden md:block"
         />
       </div>
 

@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
-      <div className="container mx-auto px-6 py-4 flex items-end justify-end md:items-center md:justify-center">
+      <div className="container mx-auto px-6 py-4 flex  md:items-center md:justify-center">
         {/* Left Nav */}
         <nav className="hidden md:flex items-right md:items-center space-x-8">
           <Link href="/" className="text-gray-700 hover:text-[#cc5500] transition font-medium">
@@ -99,9 +99,13 @@ export default function Header() {
         </nav>
 
         {/* Mobile Menu Button */}
+        <div className="flex items-center justify-between w-full md:hidden">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-extrabold">
+            <Image src="/logo.png" alt="MPM Logo" width={120} height={40} className="h-8 w-auto" />
+          </Link>
         <button className="md:hidden text-gray-700 items-right" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        </button></div>
       </div>
 
       {/* Mobile Menu */}
