@@ -155,11 +155,11 @@ export default function ResourcesClient() {
                 <div className="relative aspect-video">
                   <YouTubeEmbed
                     videoid={res.youtubeId}
-                    width="100%"
-                    height="100%"
+                    width={400}
+                    height={225}
                     playlabel={`Play ${res.title}`}
                     params="rel=0&modestbranding=1"
-                    style={{ position: "absolute", inset: 0 }}
+                    style="position: absolute; inset: 0;"
                   />
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="w-16 h-16 rounded-full bg-[#cc5500]/80 flex items-center justify-center">

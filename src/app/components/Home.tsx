@@ -654,7 +654,7 @@ export default function HomeClient() {
         <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl aspect-video bg-black/40">
           <YouTubeEmbed
             videoid="tsoQdXaNnQE"
-            width='80%'
+            width={400}
             height={315}
             playlabel="Play Daily Prayer Altar Video"
             params="rel=0&modestbranding=1&showinfo=0"

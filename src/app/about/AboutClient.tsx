@@ -183,7 +183,7 @@ export default function AboutClient() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-[#cc5500]/10 to-[#8b0000]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
             <Image
-              src="/apostle-isaac-gimba.jpg"
+              src="/m6.png"
               alt="Apostle Isaac Gimba - Meeting Point Ministry"
               width={500}
               height={650}
